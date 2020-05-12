@@ -1,0 +1,10 @@
+<ul>
+  <% @articles.each do |article| %>
+  <div class="card m-1 border-0 mx-auto" style="width: 800px;">
+    <h2 class="font-weight-normal"><%= link_to "#{article.title}", article_path(article) %></h2>
+    <p class="font-weight-light"><%= article.content %></p>
+  </div>
+  <% end %>
+</ul>
+
+

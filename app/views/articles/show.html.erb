@@ -1,0 +1,19 @@
+
+<div class="card border-0">
+  <div class="card mx-auto my-3 border-top-0 border-left-0 border-right-0 border-bottom" style="width: 800px;">
+    <h2 class="font-weight-normal"><%= @article.title %></h2>
+    <p><%= link_to "Edit", edit_articles_path(@article) %></p>
+    <p><%= link_to "Delete",
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>
+    <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/restaurants/2">
+    </a>
+  </div>
+  <div class="card mx-auto border-0" style="width: 800px;">
+    <p class="font-weight-light"><%= @article.content %></p>
+  </div>
+</div>
+
+
+
